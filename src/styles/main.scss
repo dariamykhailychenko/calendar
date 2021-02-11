@@ -1,0 +1,135 @@
+@import "~bootstrap/scss/bootstrap";
+
+$top-color: #000;
+$top-background-color: #c7c7c7;
+
+%field-style {
+    width: 230px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 2px $top-color;
+}
+%border-style {
+    border-radius: 5px;
+    border: solid 2px $top-color;
+}
+%button-style {
+    height: 40px;
+    width: 130px;
+    font-weight: 500;
+    color: $top-color;
+    background-color: $top-background-color;
+    @extend%border-style;
+
+    &:hover, &:active, &:focus {
+        outline: none;
+        box-shadow: 0 0 0 0 rgba(0,123,255,0);
+    }
+}
+
+a, body, div, form, h1,
+h2, h3, h4, h5, h6, header, html, 
+img, p, ul, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.body {
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.field {
+    @extend%field-style;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+}
+
+.delete-modal {
+    width: 30%;
+    margin: 20% auto;
+    padding: 20px;
+    background-color: $top-background-color;
+    @extend%border-style;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99999;
+
+    .massage-delete {
+        margin-bottom: 35px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+.dropdown {
+    width: 230px;
+    position: relative;
+}
+
+.btn-dropdown {
+    width: 42px;
+    height: 40px;
+    top: 0;
+    right: 0px;
+    border: 2px solid $top-color;
+    border-radius: 0 5px 5px 0;
+    background-color: $top-background-color;
+    cursor: pointer;
+    position: absolute;
+
+    .triangle-down {
+        margin: 0 auto;
+        width: 0px;
+        height: 0px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid #000;
+    }   
+}
+
+.dropdown-content {
+    border: solid 2px #c7c7c7;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    z-index: 1;  
+    
+    .list {
+        width: 230px;
+        height: 40px;
+        padding: 0 16px;
+        background-color: #fff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+}
+
+.show {
+    display: block;
+}
+
+.button {
+    &:first-child {
+        margin-right: 40px;
+    }
+
+    @extend%button-style;
+}

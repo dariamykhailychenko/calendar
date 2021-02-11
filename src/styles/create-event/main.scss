@@ -1,0 +1,56 @@
+@import "~bootstrap/scss/bootstrap";
+
+.error {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 30px;
+    font-weight: 600;
+    color: rgb(214, 61, 61);
+    background-color: rgb(253, 223, 223);
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+
+    .error-message {
+        display: flex;
+        align-items: center;
+
+        p {
+            margin-left: 10px;
+        }
+    }
+}
+
+.show-error {
+    display: flex;
+}
+
+.create-form {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.information-block {
+    width: 40%;
+}
+
+.create-block {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside label {
+    padding: 12px 12px 12px 0;
+}
+
+.button-block {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+

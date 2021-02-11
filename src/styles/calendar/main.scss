@@ -1,0 +1,81 @@
+@import "~bootstrap/scss/bootstrap";
+
+$top-color: #000;
+$top-background-color: #c7c7c7;
+
+%flex-style {
+    display: flex;
+    align-items: center;
+}
+%border-style-cell {
+    border-color: #888888;
+    border-width: 1px;
+}
+
+.wrapper {
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+
+.header-block {
+    margin-bottom: 20px;
+    @extend%flex-style;
+    justify-content: space-between;
+}
+
+.logo {
+    color: $top-color;
+
+    &:hover {
+        text-decoration: none; 
+        color: $top-color;
+    }
+}
+
+.options-block {
+    @extend%flex-style;
+}
+
+.select-block {
+    margin-right: 20px;
+}
+
+.calendar {
+    min-width: 100%;
+
+    &:first-child {
+        border-top-style: solid;
+        @extend%border-style-cell;
+    }
+}
+
+.cell {
+    text-align: center;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    @extend%border-style-cell;
+
+    &:last-child {
+        border-right-style: solid; 
+    }
+}
+
+.item {
+    font-weight: 700;
+    background-color: $top-background-color;
+}
+
+.description-cell {
+    background-color: rgb(152, 255, 152);
+    @extend%flex-style;
+    position: relative;
+}
+
+.icon-delete {
+    top: 14px;
+    right: 10px;
+    cursor: pointer;
+    position: absolute;
+}

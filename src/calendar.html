@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calendar</title>
+</head>
+<body>
+  <div class="wrapper" id="wrapper">
+    <header class="header-block">
+      <div class="logo-block">
+        <a class="logo" href="#">
+          <h1>
+            Calendar
+          </h1>
+        </a>
+      </div>
+      <div class="options-block">
+        <form class="select-block">
+          <div id="dropdown" class="dropdown block">
+            <div id="dropdown-value" class="field text" data-value=""></div>
+            <button id="btn-dropdown" class="btn-dropdown" type="button">
+              <div class="triangle-down"></div>   
+            </button>
+          </div>
+        </form>
+        <a class="btn button" href="/create-event" role="button">New event +</a>
+      </div>
+    </header>
+    <main class="main">
+      <div id="calendar" class="container calendar"></div>
+    </main>
+  </div>
+</body>
+</html>

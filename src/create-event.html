@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create-Event</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div id="error" class="error">
+      <div class="error-message">
+        <div>
+          <img src="assets/icons/icon-close.png" alt="close">
+        </div>
+        <p>Falied to create an event. Time slot is already booked.</p>
+      </div>
+      <div id="icon-close" class="icon-close">
+        <img src="assets/icons/icon-close-error.png" alt="close">
+      </div>
+    </div>
+    </div>
+    <form class="create-form">
+      <div class="information-block">
+        <div class="create-block">
+          <aside>
+            <label for="event-name">Name of the event:</label>
+          </aside>
+          <div class="field">
+            <input type="text" class="event-name text" id="event-name">
+          </div>
+        </div>
+        <div class="create-block">
+          <aside>
+            <label class="participants">Participants:</label>
+          </aside>
+          <div id="dropdown-user" class="dropdown block">
+            <div id="dropdown-value-user" class="field text" data-value=""></div>
+            <button id="btn-dropdown-user" class="btn-dropdown" type="button">
+              <div class="triangle-down"></div>   
+            </button>
+          </div>
+        </div>
+        <div class="create-block">
+          <aside>
+            <label class="participants">Day:</label>
+          </aside>
+          <div id="dropdown-day" class="dropdown block">
+            <div id="dropdown-value-day" class="field text" data-value=""></div>
+            <button id="btn-dropdown-day" class="btn-dropdown" type="button">
+              <div class="triangle-down"></div>   
+            </button>
+          </div>
+        </div>
+        <div class="create-block">
+          <aside>
+            <label class="participants">Time:</label>
+          </aside>
+          <div id="dropdown-time" class="dropdown block">
+            <div id="dropdown-value-time" class="field text" data-value=""></div>
+            <button id="btn-dropdown-time" class="btn-dropdown" type="button">
+              <div class="triangle-down"></div>   
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="button-block">
+        <a id="btn-cancel" class="btn button" href="/" role="button">Cancel</a>
+        <a id="btn-create" class="btn button" href="#" role="button">Create</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
